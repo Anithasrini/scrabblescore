@@ -21,6 +21,13 @@ public class AppTest {
     assertEquals(score, app.scrabbleScore("aaa"));
   }
 
+  @Test
+  public void scrabbleScore_returnsAScrabbleScoreForFullWord_9() {
+    App app = new App();
+    Integer score = 9;
+    assertEquals(score, app.scrabbleScore("ox"));
+  }
+
 
 }
 
